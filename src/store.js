@@ -6,7 +6,9 @@ import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index';
 
 // Import data for default state if necessary
-const urls = {};
+import { fetchUrlList } from './api.js';
+const urls = fetchUrlList() || [];
+// const urls = {};
 
 // create object from default data
 const defaultState = {urls};
