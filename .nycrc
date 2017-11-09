@@ -1,0 +1,17 @@
+{
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "all": true,
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "sourceMap": false,
+    "instrument": false,
+    "exclude": [
+      "src/**/*.spec.js",
+      "test/**"
+    ]
+}
