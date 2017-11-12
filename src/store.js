@@ -5,13 +5,11 @@ import { browserHistory } from 'react-router';
 // Import root reducer
 import rootReducer from './reducers/index';
 
-// Import data for default state if necessary
-import { fetchUrlList } from './api.js';
-const urls = fetchUrlList() || [];
-// const urls = {};
+// Import default urls if necessary
+const urls = {};
 
 // create object from default data
-const defaultState = {urls};
+const defaultState = { urls };
 const enhancers = compose(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );

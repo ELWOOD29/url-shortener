@@ -3,12 +3,11 @@ import { render } from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
-
-// Import css
+import bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
 // Import components
 import App from './components/App';
-import UrlView from './components/UrlView.js';
+import UrlView from './components/UrlView';
 
 const router = (
   <Provider store={store}>

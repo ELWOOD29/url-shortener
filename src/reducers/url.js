@@ -1,8 +1,10 @@
 function urls(state = [], action) {
   switch (action.type) {
-    case 'SHORTEN_URL' :
-      console.log(`${action.type} dispatched`);
-      return [...state, {action}];
+    case 'ADD_URL' :
+      return {
+        ...state,
+        [action.url.id]: action.url
+      };
     default:
       return state;
   }

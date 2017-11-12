@@ -1,6 +1,6 @@
-export function shortenUrl(url) {
+export function addUrl(url) {
   return {
-    type: 'SHORTEN_URL',
+    type: 'ADD_URL',
     url
   };
 }
