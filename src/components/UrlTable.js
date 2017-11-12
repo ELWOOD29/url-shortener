@@ -6,8 +6,8 @@ class UrlTable extends React.Component {
   renderTableRow(url) {
     return (
       <tr key={url.id}>
-        <td><a href={url.shortUrl}>{url.shortUrl}</a></td>
-        <td>{url.longUrl}</td>
+        <td className="entry-short-url"><a href={url.shortUrl}>{url.shortUrl}</a></td>
+        <td className="entry-long-url">{url.longUrl}</td>
       </tr>
     );
   }

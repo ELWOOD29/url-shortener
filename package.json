@@ -12,6 +12,8 @@
     "dev": "webpack-dev-server --config webpack.dev.config.js",
     "build": "npm run clean && NODE_ENV=production webpack -p --config webpack.prod.config.js --progress --profile --colors",
     "lint": "eslint .",
+    "prestart": "mongod --fork --logpath /dev/null",
+    "stopdb": "mongo admin --eval 'db.shutdownServer()' > /dev/null",
     "start": "nodemon --exec babel-node server.js"
   },
   "author": "Graeme Cottrell",
